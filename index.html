@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeverCharged – Free Trial & Subscription Reminder</title>
+<meta name="description" content="Never get charged for a free trial you forgot. NeverCharged detects trials, reminds you before the charge and links to the cancel page. Free, private, no account.">
+<meta property="og:title" content="NeverCharged – never pay for a forgotten free trial">
+<meta property="og:description" content="Detects free trials, reminds you before the charge, links to the cancel page. Free, private, no account. Chrome & Edge.">
+<meta property="og:image" content="detect.webp">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --green: #16a34a; --green-d: #15803d; --ink: #0f172a; --muted: #475569; --line: #e2e8f0; --bg: #f8fafc; --card: #fff; --soft: #f0fdf4; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e2e8f0; --muted: #94a3b8; --line: #1f2a3d; --bg: #0b1220; --card: #111c31; --soft: #0f2a1c; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--green); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  nav { display: flex; align-items: center; gap: 10px; padding: 18px 0; }
+  nav b { font-size: 20px; flex: 1; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; padding: 40px 0 56px; }
+  h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 18px; }
+  h1 em { font-style: normal; color: var(--green); }
+  .lead { font-size: 20px; color: var(--muted); margin: 0 0 26px; }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 13px 22px; border-radius: 12px; font-weight: 700; text-decoration: none; }
+  .btn.primary { background: var(--green); color: #fff; }
+  .btn.primary:hover { background: var(--green-d); }
+  .btn.ghost { border: 1px solid var(--line); color: var(--ink); background: var(--card); }
+  .soon { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  .hero img, .shot img { width: 100%; border-radius: 14px; box-shadow: 0 24px 60px -20px rgba(15,23,42,.35); border: 1px solid var(--line); display: block; }
+  section { padding: 48px 0; }
+  h2 { font-size: 32px; letter-spacing: -0.01em; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h3 { margin: 6px 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .ico { font-size: 26px; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .shot figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+  .privacy { background: var(--soft); border-radius: 18px; padding: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .privacy ul { margin: 0; padding-left: 20px; }
+  .privacy li { margin: 6px 0; }
+  .langs { font-size: 15px; color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
+  @media (max-width: 820px) {
+    .hero, .shots, .privacy { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: 1fr; }
+    nav a.hide-sm { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <img src="icon.png" width="32" height="32" style="border-radius:6px" alt="">
+    <b>NeverCharged</b>
+    <a class="hide-sm" href="#features">Features</a>
+    <a class="hide-sm" href="#privacy">Privacy</a>
+    <a href="privacy.html">Privacy policy</a>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <h1>Never pay for a <em>forgotten</em> free trial.</h1>
+      <p class="lead">NeverCharged spots free trials as you sign up, reminds you before the first charge, and takes you straight to the cancel page. Free, private, and no account needed.</p>
+      <div class="btns">
+        <a class="btn primary" href="#install">Add to Chrome</a>
+        <a class="btn ghost" href="#install">Add to Edge</a>
+      </div>
+      <p class="soon">Coming soon to the Chrome Web Store and Microsoft Edge Add-ons.</p>
+      <p class="langs">English · Français · العربية</p>
+    </div>
+    <img src="detect.webp" alt="NeverCharged detecting a 7-day free trial on a checkout page">
+  </div>
+
+  <section id="features">
+    <h2>Everything you need to stop surprise charges</h2>
+    <p class="sub">All features are free. Nothing to sign up for.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🛡️</div><h3>Catches trials as you sign up</h3><p>Reads “7-day free trial, then $12.99/month” on checkout pages and offers to track it. It always asks first.</p></div>
+      <div class="card"><div class="ico">⏰</div><h3>Reminds you before the charge</h3><p>7 days, 3 days, 1 day or 6 hours before, your choice. One click to the cancel page.</p></div>
+      <div class="card"><div class="ico">✉️</div><h3>Finds trial emails</h3><p>Started a trial on your phone? Open the confirmation in Gmail or Outlook and NeverCharged reads the exact end date.</p></div>
+      <div class="card"><div class="ico">✨</div><h3>On-device AI</h3><p>Messy pages are read by the AI built into Chrome and Edge, right on your computer. Nothing is uploaded.</p></div>
+      <div class="card"><div class="ico">💤</div><h3>“Still using it?”</h3><p>Flags subscriptions you haven’t opened in weeks, and shows what they cost you each month.</p></div>
+      <div class="card"><div class="ico">📅</div><h3>Add to calendar</h3><p>Google Calendar, Outlook or Apple Calendar in one click, so reminders reach your phone too.</p></div>
+      <div class="card"><div class="ico">📈</div><h3>Price-increase alerts</h3><p>Warns you when a service shows a higher price than the one you pay.</p></div>
+      <div class="card"><div class="ico">💰</div><h3>See what you save</h3><p>Your monthly subscription total, plus a “Saved” counter for every charge you avoided.</p></div>
+      <div class="card"><div class="ico">🔄</div><h3>Sync your computers</h3><p>Optional. Uses your browser account’s own sync. There’s no NeverCharged server.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>See it in action</h2>
+    <p class="sub">Real screenshots of the extension.</p>
+    <div class="shots">
+      <figure class="shot" style="margin:0"><img src="remind.webp" alt="Reminder before a trial is charged"><figcaption>Reminded before you’re charged, with a one-click cancel page.</figcaption></figure>
+      <figure class="shot" style="margin:0"><img src="email.webp" alt="Trial found in a Gmail confirmation email"><figcaption>Trial confirmation emails in Gmail and Outlook.</figcaption></figure>
+      <figure class="shot" style="margin:0"><img src="subs.webp" alt="Subscriptions with a price-increase alert"><figcaption>Subscriptions, monthly total and price-increase alerts.</figcaption></figure>
+      <figure class="shot" style="margin:0"><img src="detect.webp" alt="Free trial detected on a checkout page"><figcaption>Free trial detected on a checkout page.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="privacy">
+      <div>
+        <h2>Private by design</h2>
+        <p class="sub" style="margin:0">NeverCharged has no servers. Your list stays in your browser, and only the features you turn on can read anything.</p>
+      </div>
+      <ul>
+        <li>No account, no analytics, no ads, no tracking</li>
+        <li>Pages and emails are read on your device, never uploaded</li>
+        <li>Reading pages, emails and history is off until you switch it on</li>
+        <li>Export or delete your data at any time</li>
+        <li><a href="privacy.html">Read the full privacy policy →</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Get NeverCharged</h2>
+    <p class="sub">Store links will appear here as soon as the extension is published. Want to try it early? <a href="https://github.com/Ahmadkh04/nevercharged/issues">Open an issue on GitHub</a> and say hi.</p>
+  </section>
+
+  <footer>
+    <span>© 2026 NeverCharged</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="test.html">Test page for reviewers</a>
+    <a href="https://github.com/Ahmadkh04/nevercharged/issues">Contact & support</a>
+  </footer>
+</div>
+</body>
+</html>
